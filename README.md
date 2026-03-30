@@ -72,7 +72,7 @@ O desenvolvimento deste sistema tem como objetivo resolver problemas do agendame
 | Camada | Tecnologia | Versão | Justificativa |
 |--------|------------|--------|---------------|
 | Frontend | **React.js** | 18+ | Biblioteca JavaScript para construção de interfaces de usuário reativas e componentizadas, ideal para SPAs (Single Page Applications). |
-| Frontend Tooling | **Vite** | 5+ | Ferramenta de build frontend de próxima geração que oferece um ambiente de desenvolvimento extremamente rápido e otimizado para produção. |
+| Frontend Tooling | **Next.js** | 5+ | Ferramenta de build frontend de próxima geração que oferece um ambiente de desenvolvimento extremamente rápido e otimizado para produção. |
 | Estilização | **Tailwind CSS** | 3+ | Framework CSS utilitário que permite construir designs personalizados rapidamente, sem sair do HTML, promovendo consistência e agilidade no desenvolvimento da UI. |
 | Backend | **Node.js** | 18+ | Ambiente de execução JavaScript server-side, permitindo o uso da mesma linguagem em todo o stack (full-stack JavaScript/TypeScript). |
 | Backend Framework | **Express.js** | 4+ | Framework web minimalista e flexível para Node.js, facilitando a criação de APIs RESTful robustas e escaláveis. |
@@ -143,49 +143,6 @@ A modelagem de dados é fundamental para a estrutura do sistema. As principais e
 
 ---
 
-## 🗓 Organização de Tarefas
-
-Para garantir um desenvolvimento estruturado e colaborativo, o projeto será dividido em fases com responsabilidades claras. A gestão pode ser feita utilizando ferramentas como GitHub Projects, Trello ou Jira.
-
-### Fases do Projeto
-
-1.  **Configuração Inicial (1-2 dias)**
-    *   Criação do repositório Git e configuração inicial do projeto (Vite, React, Tailwind CSS, Node.js, Express, TypeScript).
-    *   Configuração do ambiente de desenvolvimento e ferramentas (ESLint, Prettier).
-    *   Inicialização do Prisma e conexão com o banco de dados PostgreSQL.
-    *   Definição da estrutura de pastas e arquivos base.
-2.  **Desenvolvimento do Backend (3-5 dias)**
-    *   Implementação do schema do banco de dados com Prisma e execução das migrações.
-    *   Desenvolvimento da API de autenticação (cadastro, login, JWT).
-    *   Criação das APIs para gerenciamento de usuários, serviços e perfis de prestadores.
-    *   Implementação da lógica de agendamento, verificação de disponibilidade e gestão de reservas.
-    *   Desenvolvimento das APIs para avaliações e histórico.
-3.  **Desenvolvimento do Frontend (3-5 dias)**
-    *   Criação da estrutura de rotas da aplicação com React Router.
-    *   Desenvolvimento dos componentes de UI utilizando React e Tailwind CSS (formulários de login/cadastro, perfil, busca de serviços, visualização de agenda, agendamento).
-    *   Integração com as APIs do backend utilizando Axios.
-    *   Implementação da lógica de gerenciamento de estado da aplicação (ex: React Context API ou Redux/Zustand).
-4.  **Testes, Refinamentos e Deployment (1-2 dias)**
-    *   Implementação de testes unitários e de integração (Jest/Vitest para frontend, Supertest para backend).
-    *   Testes de usabilidade, responsividade e acessibilidade.
-    *   Correção de bugs e ajustes finos na interface e na lógica de negócio.
-    *   Preparação para deployment em plataformas como Render ou Vercel (para frontend) e Render/Heroku (para backend).
-
-### Divisão de Responsabilidades
-
-*   **Caio (Foco em Backend e Banco de Dados):**
-    *   Configuração do PostgreSQL e Prisma ORM.
-    *   Desenvolvimento das APIs de autenticação, usuários, serviços e prestadores.
-    *   Implementação da lógica de agendamento e transações.
-    *   Configuração de deployment do backend.
-*   **Heitor (Foco em Frontend e UI/UX):**
-    *   Configuração do projeto React com Vite e Tailwind CSS.
-    *   Criação e estilização de todos os componentes e páginas da interface.
-    *   Integração com as APIs do backend e gerenciamento de estado do frontend.
-    *   Configuração de deployment do frontend.
-
----
-
 ## 🚀 Como Executar
 
 Para configurar e executar o **Sistema de Agendamento** localmente, siga os passos abaixo. Certifique-se de ter Node.js (versão 18+) e um servidor PostgreSQL instalados e configurados em sua máquina.
@@ -205,7 +162,7 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
 # or
 pnpm dev
