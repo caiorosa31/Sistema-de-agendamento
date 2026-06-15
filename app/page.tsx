@@ -127,7 +127,7 @@ export default function HomePage() {
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm text-gray-600 font-medium">
             <a href="#como-funciona" className="hover:text-gray-900 transition-colors">Como Funciona</a>
-            <a href="/search" className="hover:text-gray-900 transition-colors">Serviços</a>
+            <a href="#servicos" className="hover:text-gray-900 transition-colors">Serviços</a>
             <a href="#depoimentos" className="hover:text-gray-900 transition-colors">Depoimentos</a>
           </nav>
           <Link
@@ -158,7 +158,7 @@ export default function HomePage() {
               Agende seu Serviço
             </Link>
             <Link
-              href="/search"
+              href="#servicos"
               className="border border-gray-300 hover:border-gray-400 text-gray-800 font-semibold px-6 py-3.5 rounded-xl transition-colors"
             >
               Ver Todos os Serviços
@@ -346,12 +346,9 @@ export default function HomePage() {
             >
               Começar Agora
             </Link>
-            <Link
-              href="/support"
-              className="border border-white/30 text-white font-semibold px-8 py-3.5 rounded-xl hover:bg-white/10 transition-colors"
-            >
+            <button className="border border-white/30 text-white font-semibold px-8 py-3.5 rounded-xl hover:bg-white/10 transition-colors">
               Falar com o Suporte
-            </Link>
+            </button>
           </div>
         </div>
       </section>
